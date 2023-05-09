@@ -8,11 +8,11 @@ class Square():
         for key, value in kwargs.items():
             setattr(self, key, value)
 
-    def area(self):
+    def area_of_my_Square(self):
         """ Area of the square """
         return self.width * self.width
 
-    def permiter(self):
+    def permiter_of_my_Square(self):
         """Perimeter of the square"""
         return (self.width * 2) + (self.height * 2)
 
@@ -24,5 +24,5 @@ if __name__ == "__main__":
 
     s = Square(width=12, height=9)
     print(s)
-    print(s.area())
-    print(s.permiter())
+    print(s.area_of_my_Square())
+    print(s.permiter_of_my_Square())
